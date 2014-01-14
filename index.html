@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
     <meta name="description" content="Livepoint is a creative agency">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript, Design, Marketing, Branding">
@@ -12,10 +12,11 @@
     
   </head>
   <body>
-  
+    <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <h1>Hello, {{ yourName }}!</h1>
     <!-- js -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js" async></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" async></script>
+    <!-- oldie goldie <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" async></script> -->
     
     <!-- analytics -->
   </body>
